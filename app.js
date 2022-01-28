@@ -1,4 +1,4 @@
-require('dotenv').config();
+require("dotenv").config();
 
 const express = require("express");
 var axios = require("axios").default;
@@ -29,10 +29,8 @@ app.post("/", (req, res) => {
   axios
     .request(options)
     .then(function (response) {
-      console.log(response.data);
       const translatedObject = response.data;
       const translatedText = translatedObject.text[0];
-      console.log(translatedText);
       res.send("The translated text is " + translatedText);
     })
     .catch(function (error) {
