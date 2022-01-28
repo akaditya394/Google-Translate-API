@@ -1,2 +1,2 @@
 # Google-Translate-API
-translating text to hindi using google translate API
+translating text to hindi using Just Translated API
